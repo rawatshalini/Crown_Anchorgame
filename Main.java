@@ -96,7 +96,7 @@ public class Main {
             totalWins += winCount;
             totalLosses += loseCount;
             //bug 8: game finish message
-
+            System.out.print("Game finish please enter to play another game");
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
