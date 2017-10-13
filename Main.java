@@ -15,8 +15,26 @@ public class Main {
         System.out.println("Welocome to Crown and Anchor game");
 		
         //bug 2: Enter user name and age
+        String name;
+		int age;
+		 System.out.println("Please enter your name and age");
+         Scanner input = new Scanner(System.in);
+		name = input.next();
+		age = input.nextInt();
+		if(age < 18 )
+		{
+			System.out.println("Sorry you cant play fu");//change for welcome message
+			System.exit(0);
+		}
+		else
+		{
+		System.out.println("lets start the game \n");//ch
+		System.out.println("Press \"ENTER\" to continue...");
+		Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+		}
 
-        Player player = new Player("Fred", 100);
+        Player player = new Player(name, 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
 
@@ -30,7 +48,7 @@ public class Main {
             
             for (int i = 0; i < 100; i++)
             {
-            	String name = "Fred";
+            	//String name = "Fred";
             	int balance = 100;
             	int limit = 0;
                 player = new Player(name, balance);
