@@ -74,6 +74,7 @@ public class Main {
             System.out.println(String.format("Win count = %d, Lose Count = %d, %.2f", winCount, loseCount, (float) winCount/(winCount+loseCount)));
             totalWins += winCount;
             totalLosses += loseCount;
+            //bug 8: game finish message
 
             String ans = console.readLine();
             if (ans.equals("q")) break;
