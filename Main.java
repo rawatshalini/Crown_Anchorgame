@@ -10,6 +10,7 @@ public class Main {
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
+        //bug 1: welcome message should display
 
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
