@@ -11,6 +11,9 @@ public class Main {
         Dice d2 = new Dice();
         Dice d3 = new Dice();
         //bug 1: welcome message should display
+        
+        System.out.println("Welocome to Crown and Anchor game");
+		
         //bug 2: Enter user name and age
 
         Player player = new Player("Fred", 100);
